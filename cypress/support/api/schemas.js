@@ -1,5 +1,5 @@
 import spok from 'cy-spok'
-
+ 
 
 class Schemas{
     getBookingSchema(){
