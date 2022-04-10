@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
+    "cy:run": "npx cypress run",
     "test:healthcheck":"npx cypress run --env grep=@healthcheck",
     "test:contract":"npx cypress run --env grep=@contract",
     "test:functional":"npx cypress run --env grep=@functional"
