@@ -11,7 +11,6 @@ context('Booking', () => {
   });
 
     it('Validar o contrato do GET Booking @contract', () => {
-
       req.getBooking().then(getBookingResponse => {
           assertions.validateContractOf(getBookingResponse, schemas.getBookingSchema())
           assertions.validateContractOf(getBookingResponse, schemas.getBookingSchema())
@@ -51,7 +50,7 @@ context('Booking', () => {
       req.deleteBooking(postBookingResponse).then(deleteBookingResponse => {
         assertions.shouldHaveStatus(deleteBookingResponse, 201)
       })
-    })
+    }) 
   });
 
 

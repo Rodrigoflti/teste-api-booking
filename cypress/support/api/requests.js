@@ -59,7 +59,7 @@ class Requests{
         return cy.request({
          method: 'PUT',
          url: `booking/${id}`,
-         headers: {
+         headers: { 
              Cookie: `token=${Cypress.env('token')}`
          },
          body: {          
